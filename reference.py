@@ -9,5 +9,6 @@ friends = ["sai", "har", "nan", "bal"]
 
 # if you want to take a copy of array rather than taking reference , you should use copy method on array
 others = friends.copy()  # others will have a copy of friends array
+others = list(friends)   # others will have a copy of friends array
 others.insert(0, "iam")  # this won't affect friends array
 print(friends)  # ['sai', 'har', 'nan', 'bal']
